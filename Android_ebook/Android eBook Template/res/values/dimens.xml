@@ -1,0 +1,29 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="slidingmenu_offset">70dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <!-- Cling -->
+    <dimen name="clingPunchThroughGraphicCenterRadius">94dp</dimen>
+    <!-- The offset for the text in the cling -->
+    <dimen name="cling_text_block_offset_x">0dp</dimen>
+    <dimen name="cling_text_block_offset_y">0dp</dimen>
+    <dimen name="reveal_radius">48dp</dimen>
+    <!-- entries for custom clings, will be set in overlays -->
+    <add-resource name="custom_cling_margin_top" type="dimen" />
+    <add-resource name="custom_cling_margin_right" type="dimen" />
+    <add-resource name="custom_cling_margin_left" type="dimen" />
+    <!-- height of the bottom row of controls -->
+    <dimen name="button_bar_height">112dip</dimen>
+    
+    <dimen name="sdmenu_text1">16sp</dimen>
+    <dimen name="sdmenu_text2">14sp</dimen>
+    
+    <dimen name="button_size">48dp</dimen>
+
+</resources>

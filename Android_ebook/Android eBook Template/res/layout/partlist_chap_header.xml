@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="2dip"
+    android:paddingTop="2dip" >
+
+    <ImageView
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dip"
+        android:src="@drawable/chapter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/sdmenu_text1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/text1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/sdmenu_text2"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>

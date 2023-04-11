@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cling"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/btn_bg_white"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_margin="2dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/menu_bg_white"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/btn_bg_khaki"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_margin="2dp"
+        android:background="@color/khaki"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/menu_bg_khaki"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/btn_bg_sepia"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_margin="2dp"
+        android:background="@color/sepia"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/menu_bg_sepia"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/controller"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_nav"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/btn_home"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_bg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_home"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/btn_home"
+                android:src="@drawable/separate"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/btn_bm_list"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_bg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bookmark_folder"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/btn_bm_list"
+                android:src="@drawable/separate"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/btn_bookmark"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:background="@drawable/button_bg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/btn_bookmark_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bookmark_button"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_background"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_toLeftOf="@+id/btn_bookmark"
+                android:background="@drawable/button_bg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/background"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_about"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_toLeftOf="@+id/btn_background"
+                android:background="@drawable/button_bg"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_launcher"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/controller"
+            android:gravity="center_vertical" >
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id" >
+            </com.google.android.gms.ads.AdView>
+
+            <com.ittus.book_template.views.TitlePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/adView"
+                android:layout_below="@id/indicator" />
+
+            <ImageButton
+                android:id="@+id/btn_fullscreen"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_above="@id/adView"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/fullscreen_button" />
+
+            <include
+                android:id="@+id/layout_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="64dp"
+                layout="@layout/bg_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/main_cling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/main_cling"
+        android:visibility="gone" />
+
+</FrameLayout>

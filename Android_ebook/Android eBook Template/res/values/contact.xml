@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dialog_about_msg">Copyright © 2013 by Ittus Entertainment</string>
+    <string name="dialog_about_contact">Contact us:</string>
+    <string name="dialog_about_neg">More apps</string>
+    <string name="dialog_about_neu">Rate me</string>
+    <string name="dialog_about_email">vietnamvodich2100@gmail.com</string>
+    <string name="developer_name">vitcon</string>
+
+
+</resources>

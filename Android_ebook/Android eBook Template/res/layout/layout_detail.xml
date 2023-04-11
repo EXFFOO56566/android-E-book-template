@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.ittus.book_template.views.SimpleWebView
+        android:id="@+id/chapter_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+
+        <Button
+            android:id="@+id/btn_zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_zoom_out" />
+
+        <Button
+            android:id="@+id/btn_zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_zoom_in" />
+    </LinearLayout> -->
+
+</FrameLayout>

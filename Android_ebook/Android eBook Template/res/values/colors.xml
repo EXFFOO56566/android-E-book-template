@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="khaki">#F0E68C</color>
+    <color name="sepia">#E9D8BA</color>
+    <color name="fade">#66000000</color>
+    <color name="list_item_bg">#585858</color>
+
+</resources>

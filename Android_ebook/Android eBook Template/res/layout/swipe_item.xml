@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:tag="back" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_del"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/front"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_item_bg"
+        android:orientation="horizontal"
+        android:tag="front" >
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dip"
+            android:src="@drawable/bookmark_item" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sdmenu_text1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/text1"
+                android:layout_marginBottom="3dip"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sdmenu_text2"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

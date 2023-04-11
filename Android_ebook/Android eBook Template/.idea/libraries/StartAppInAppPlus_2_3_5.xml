@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="StartAppInAppPlus-2.3.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/StartAppInAppPlus-2.3.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
